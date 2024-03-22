@@ -1,0 +1,33 @@
+.div-header-img {
+  height: 24vw;
+  margin-top: 104px;
+}
+
+.author-name {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+.blog-content {
+  margin-top: 16px;
+}
+
+.separator {
+  border-top: 2px solid var(--secondary-container-color);
+  margin-top: 0px;
+}
+
+/* Mobile */
+@media screen and (max-width: 501px) {
+  .div-header-img {
+    margin-top: 264px;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 502px) and (max-width: 860px) {
+  .div-header-img {
+    margin-top: 104px;
+  }
+}
