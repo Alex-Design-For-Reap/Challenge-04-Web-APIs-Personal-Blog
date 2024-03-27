@@ -1,6 +1,6 @@
 .div-header-img {
   height: 24vw;
-  margin-top: 104px;
+  /* margin-top: 104px; */
 }
 
 .cards-section {
@@ -42,16 +42,16 @@
   margin-top: 0px;
 }
 
-/* Mobile */
+/* Mobile
 @media screen and (max-width: 501px) {
   .div-header-img {
     margin-top: 264px;
   }
 }
 
-/* Tablet */
+Tablet
 @media screen and (min-width: 502px) and (max-width: 860px) {
   .div-header-img {
     margin-top: 104px;
   }
-}
+} */
