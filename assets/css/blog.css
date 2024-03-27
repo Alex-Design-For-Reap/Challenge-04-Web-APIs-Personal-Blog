@@ -3,16 +3,40 @@
   margin-top: 104px;
 }
 
+.cards-section {
+  background-color: var(--primary-container-color);
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: var(--primary-container-color);
+}
+
+.single-card-container {
+  /* border: 2px solid red; */
+  padding: 24px;
+  background-color: var(--on-primary-color);
+}
+
+.single-card-container:hover {
+  position: relative;
+  top: 2px;
+  box-shadow: 8px 8px var(--secondary-container-color);
+}
+
 .author-name {
   font-size: 14px;
   font-weight: 700;
   margin-top: 16px;
 }
 
-.blog-content {
+.card-content {
   margin-top: 16px;
 }
 
+#separator,
 .separator {
   border-top: 2px solid var(--secondary-container-color);
   margin-top: 0px;

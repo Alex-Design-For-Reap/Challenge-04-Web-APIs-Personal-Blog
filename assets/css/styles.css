@@ -1,10 +1,24 @@
 /* Colour Theme */
 
-:root {
+/* :root {
   --primary-color: #0058ca;
   --secondary-color: #226a4c;
-  --light-color: #fafafa;
-  --dark-color: #1b1b1f;
+  --on-primary-color: #FFFFFF;
+  --on-surface: #1A1B20;
+  --primary-container-color: #d9e2ff;
+  --secondary-container-color: #aaf2cc;
+  --on-primary-container-color: #001945;
+  --on-secondary-container-color: #002114;
+  --surface-container-color: #faf8ff;
+} */
+
+[data-theme="light"] {
+  /* --color-bg:#faf8ff;
+  --color-fg:#1b1b1f; */
+  --primary-color: #0058ca;
+  --secondary-color: #226a4c;
+  --on-primary-color: #FFFFFF;
+  --on-surface: #1A1B20;
   --primary-container-color: #d9e2ff;
   --secondary-container-color: #aaf2cc;
   --on-primary-container-color: #001945;
@@ -12,10 +26,26 @@
   --surface-container-color: #faf8ff;
 }
 
+[data-theme="dark"] {
+  /* --color-bg:#1b1b1f;
+  --color-fg:#faf8ff; */
+    --primary-color: #B0C6FF;
+    --secondary-color: #8ED5B1;
+    --on-primary-color: #152E60;
+    --on-surface: #E2E2E9;
+    --primary-container-color: #2E4578;
+    --secondary-container-color: #005236;
+    --on-primary-container-color: #D9E2FF;
+    --on-secondary-container-color: #AAF2CC;
+    --surface-container-color: #121318;
+  }
+
 /* Global Styles */
 
 * {
   font-family: sans-serif, "Arial";
+  margin: 0px;
+  box-sizing: border-box;
 }
 
 /* Typography */
@@ -44,8 +74,8 @@ body {
   /* flex-direction: column; */
   /* font-family: "Arial", sans-serif; */
   line-height: 1.6;
-  color: var(--dark-color);
-  background-color: var(--light-color-secondary-);
+  color: var(--on-surface);
+  background-color: var(--on-primary-color);
   margin: 0;
   float: none;
 }
@@ -76,7 +106,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: var(--on-primary-color);
   text-decoration: none;
 }
 
@@ -110,7 +140,7 @@ textarea {
 footer {
   background-color: var(--on-primary-container-color);
   text-align: center;
-  color: var(--light-color);
+  color: var(--on-primary-color);
   padding: 40px;
   /* position: fixed; */
   margin-bottom: 0%;
@@ -178,8 +208,8 @@ button:hover {
 .title-header {
   /* max-width: 40%; */
   text-align: center;
-  color: var(--light-color);
-  background: rgba(0, 0, 0, 0.5);
+  color: var(--on-primary-color);
+  background: var(--on-primary-container-color)
 }
 
 #add-new-blog {
@@ -191,6 +221,7 @@ button:hover {
   justify-content: center;
   margin-bottom: 48px;
 }
+
 
 .add-blog-container {
   /* display: flex; */

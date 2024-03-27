@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -22,13 +22,20 @@
         </div>
         <nav>
           <ul>
-            <li><a href="/blog.html">Blogs List</a></li>
             <li><a href="/index.html">Add a new blog</a></li>
+            <li><a href="/blog.html">Blogs List</a></li>
           </ul>
         </nav>
-        <div class="mode-toggle">
+        <!-- <div class="mode-toggle">
           <button type="button">Mode Toggle placeholder &#x2193;</button>
-        </div>
+        </div> -->
+        <button
+          type="button"
+          data-theme-toggle
+          aria-label="Change to light theme"
+        >
+          🌙
+        </button>
       </div>
       <div class="div-header-img">
         <div class="title-header">
@@ -38,14 +45,14 @@
     </header>
 
     <main>
-      <section>
-        <div>
-          <div>
-            <div>
-              <h2>This is my post title</h2>
-              <div class="separator"></div>
+      <section class="cards-section">
+        <div class="cards-container" id="cards-container">
+          <div class="single-card-container" id="single-card-container">
+            <div class="card-title-container" id="card-title-container">
+              <h2 id="card-title">This is my post title</h2>
+              <div id="separator" class="separator"></div>
             </div>
-            <div class="blog-content">
+            <div id="card-content" class="card-content">
               <p>
                 This is my post content Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Odio, fugit saepe natus ab eum, ipsum sit
@@ -56,8 +63,8 @@
                 odit.
               </p>
             </div>
-            <div class="author-name">
-              <p>post author</p>
+            <div id="author-name" class="author-name">
+              <p>Author name</p>
             </div>
           </div>
         </div>
@@ -67,5 +74,8 @@
     <footer>
       <p>&copy; 2024 Designer by Alex Da Silva. All Rights Reserved.</p>
     </footer>
+
+    <script src="/assets/js/blog.js"></script>
+    <script src="/assets/js/thememode.js"></script>
   </body>
 </html>
