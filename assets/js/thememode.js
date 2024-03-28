@@ -17,7 +17,7 @@ function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark })
   }
   
  
-//  update the button text and aria-label.
+//  update the icon and aria-label.
 
   function updateButton({ buttonEl, isDark }) {
     const newCta = isDark ? "🌙" : "☀️";

@@ -1,6 +1,5 @@
 .div-header-img {
   height: 24vw;
-  /* margin-top: 104px; */
 }
 
 .cards-section {
@@ -15,7 +14,6 @@
 }
 
 .single-card-container {
-  /* border: 2px solid red; */
   padding: 24px;
   background-color: var(--on-primary-color);
 }
@@ -41,17 +39,3 @@
   border-top: 2px solid var(--secondary-container-color);
   margin-top: 0px;
 }
-
-/* Mobile
-@media screen and (max-width: 501px) {
-  .div-header-img {
-    margin-top: 264px;
-  }
-}
-
-Tablet
-@media screen and (min-width: 502px) and (max-width: 860px) {
-  .div-header-img {
-    margin-top: 104px;
-  }
-} */

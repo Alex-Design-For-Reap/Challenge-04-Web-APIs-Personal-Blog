@@ -1,20 +1,7 @@
 /* Colour Theme */
 
-/* :root {
-  --primary-color: #0058ca;
-  --secondary-color: #226a4c;
-  --on-primary-color: #FFFFFF;
-  --on-surface: #1A1B20;
-  --primary-container-color: #d9e2ff;
-  --secondary-container-color: #aaf2cc;
-  --on-primary-container-color: #001945;
-  --on-secondary-container-color: #002114;
-  --surface-container-color: #faf8ff;
-} */
-
+/* Dark mode */
 [data-theme="light"] {
-  /* --color-bg:#faf8ff;
-  --color-fg:#1b1b1f; */
   --primary-color: #0058ca;
   --secondary-color: #226a4c;
   --on-primary-color: #FFFFFF;
@@ -26,9 +13,8 @@
   --surface-container-color: #faf8ff;
 }
 
+/* Light mode */
 [data-theme="dark"] {
-  /* --color-bg:#1b1b1f;
-  --color-fg:#faf8ff; */
     --primary-color: #B0C6FF;
     --secondary-color: #8ED5B1;
     --on-primary-color: #152E60;
@@ -75,9 +61,6 @@ h3 {
 
 body {
   position: relative;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* font-family: "Arial", sans-serif; */
   line-height: 1.6;
   color: var(--on-surface);
   background-color: var(--on-primary-color);
@@ -149,7 +132,6 @@ footer {
   text-align: center;
   color: var(--on-primary-color);
   padding: 40px;
-  /* position: fixed; */
   margin-bottom: 0%;
 }
 
@@ -213,7 +195,6 @@ button:hover {
 }
 
 .title-header {
-  /* max-width: 40%; */
   text-align: center;
   color: var(--on-primary-color);
   background: var(--on-primary-container-color)
@@ -231,12 +212,8 @@ button:hover {
 
 
 .add-blog-container {
-  /* display: flex; */
-  /* max-width: 1200px; */
   position: relative;
-  /* gap: 80px; */
   justify-content: center;
-  /* flex-wrap: wrap; */
 }
 
 ::selection {

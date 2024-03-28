@@ -1,13 +1,5 @@
-// ***BLOG PAGE*****
+// ***BLOG PAGE FUNCTION TO:****
 // getting value/input from the local storage
-
-// let title = JSON.parse(localStorage.getItem(""))
-// let title = localStorage[`title`];
-// let content = localStorage[`content`];
-
-
-// clicking on button to submit the content
-// let submitButton = document.getElementById('submit-button');
 
 // creating a new card based on the classes and ids below
 let cardsContainer = document.getElementById(`cards-container`);
@@ -18,14 +10,13 @@ let separator = document.getElementById(`separator`);
 let cardContent = document.getElementById(`card-content`);
 let authorName = document.getElementById(`author-name`);
 
-
-
 function mycoolFunction() {
-
+    // converting JSON into JavaScript object
     let allBlogInfo = JSON.parse(localStorage.getItem("allBlogInfo")) || [];
 
     cardsContainer.innerHTML = ``;
 
+    //function for calling each blog info and index it.
     allBlogInfo.forEach(function(blogInfo, index) {
 
     let newCardContainer = document.createElement('div');
@@ -48,7 +39,6 @@ function mycoolFunction() {
     newCardContainer.appendChild(newCardContent);
     newCardContent.className += " card-content"
     
-
     let newP = document.createElement(`p`);
     newCardContent.appendChild(newP);
     newP.textContent = blogInfo.content
@@ -63,5 +53,5 @@ function mycoolFunction() {
 
 });
 }
-
+//calling the function
 mycoolFunction();
