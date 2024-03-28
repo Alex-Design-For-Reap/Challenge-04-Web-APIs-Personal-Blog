@@ -135,15 +135,11 @@ footer {
   margin-bottom: 0%;
 }
 
+footer > p {
+  margin-top: 24px;
+}
+
 /* Class, IDs */
-.logo-header,
-.mode-toggle {
-  width: 240px;
-}
-.mode-toggle {
-  display: flex;
-  justify-content: flex-end;
-}
 
 .logo-header img {
   max-width: 56px;
@@ -238,9 +234,9 @@ button:hover {
     justify-content: center;
   }
 
-  .mode-toggle {
+  /* .mode-toggle {
     justify-content: center;
-  }
+  } */
 
   header .header-nav {
     flex-direction: column;
